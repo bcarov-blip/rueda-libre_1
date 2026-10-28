@@ -4,5 +4,7 @@ Error: ENOTDIR: not a directory, stat '/home/cohorte8/rueda_libre/index.html/pro
 
 En la arquitectura web de Rueda Libre, HTML define la estructura y el contenido semántico del sitio (como las fichas y catálogos de las bicicletas), CSS aplica la identidad visual, colores y un diseño adaptable a cualquier dispositivo, mientras que JavaScript aporta la interactividad necesaria para procesar reservas, calcular tarifas en tiempo real y responder dinámicamente a las acciones del usuario.
 
-
+http://127.0.0.1:5500/index.html
+http://127.0.0.1:5500/paginas/tarifas.html
+http://127.0.0.1:5500/paginas/reservas.html
 
