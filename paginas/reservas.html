@@ -21,15 +21,111 @@
     </header>
 
     <main>
-        <!-- Bloque principal de la página -->
+        
         <section>
             <h2>¿Cómo hacer tu reserva?</h2>
-            <p>Escríbenos a nuestro correo de contacto para agendar: 
+            <h3>Crea tu reserva</h3>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Tus datos</legend>
+                    <p>
+                        <label for="nombre">Ingresa el nombre:</label><br>
+                        <input 
+                            type="text" 
+                            id="nombre"
+                            name="nombre-completo"
+                            placeholder="Ej:Brayan Caro Viana"
+                            minlength="3"
+                            maxlength="40"
+                            required>
+                    </p>
+                    
+                    <p>
+                        <label for="telefono">Ingresa el telefono:</label><br>
+                        <input 
+                            type="tel" 
+                            name="telefono-completo" 
+                            id="telefono"
+                            placeholder="Ej:3216311975"
+                            minlength="6"
+                            maxlength="10"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="imail">Ingresa tu correo:</label><br>
+                        <input 
+                            type="email"
+                            name="correo.usuario"
+                            id="imail"
+                            placeholder="Ej:ejemplo@dominio.com"
+                            required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tus reservas</legend>
+
+                    <p>
+                        <label for="fecha">Fecha de reserva:</label><br>
+                        <input 
+                            type="date"
+                            name="la-fecha-reservada-es"
+                            id="fecha"
+                            min="2026-11-01"
+                            max="2026-12-31"
+                            required>
+                    </p>
+                    
+                    <p>
+                        <label for="bicicleta">Escoja el tipo de bicicleta:</label><br>
+                        <select id="bicicleta" name="tipo_bicicleta" required>
+                            <option value="">-- Selecciona un tipo de bicicleta --</option>
+                            <option value="urbana">Bicicleta Urbana</option>
+                            <option value="montana">Bicicleta de Montaña</option>
+                            <option value="electrica">Bicicleta Eléctrica</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="cantidad">Cantidad de bicicletas:</label><br>
+                        <input 
+                            type="number" 
+                            id="cantidad" 
+                            name="cantidad_bicicletas" 
+                            min="1" 
+                            max="6" 
+                            value="1" 
+                            step="1" 
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="plan">Escoja su plan:</label><br>
+                        <select id="plan" name="el-plan-es" required>
+                            <option value="">-- Selecciona una ruta --</option>
+                            <option value="urbana">Rio parques</option>
+                            <option value="montana">sabores de barrio</option>
+                            <option value="electrica">Reto las palmas</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confirmacion</legend>
+                </fieldset>
+
+                <p><button type="submit" name="enviar">Enviar reserva</button></p>
+
+            </form>
+            
+            <p> escríbenos a nuestro correo de contacto para agendar: 
                 <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
             </p>
         </section>
 
-        <!-- Contenido complementario (Requerido por la consigna) -->
         <aside>
             <h2>Horario de atención</h2>
             <dl>
